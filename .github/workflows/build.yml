@@ -15,4 +15,3 @@ jobs:
       uses: skx/github-action-publish-binaries@master
       with:
         args: target/scala*/cloud-storage-etl-udfs-*.jar
-      secrets: ["GITHUB_TOKEN"]
