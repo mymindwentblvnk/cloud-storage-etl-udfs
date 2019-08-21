@@ -13,5 +13,6 @@ jobs:
       run: test -f target/scala*/cloud-storage-etl-udfs-*.jar
     - name: Deploy JAR to releases
       uses: skx/github-action-publish-binaries@master
-      args: target/scala*/cloud-storage-etl-udfs-*.jar
+      with:
+        args: target/scala*/cloud-storage-etl-udfs-*.jar
       secrets: ["GITHUB_TOKEN"]
