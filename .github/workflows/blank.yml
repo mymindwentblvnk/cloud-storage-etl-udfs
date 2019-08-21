@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run a one-line script
-      run: apt install sbt && ./sbtx assembly
+      run: sudo apt install sbt && ./sbtx assembly
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
