@@ -7,11 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-#     - name: Install prerequisites
-#       run: sudo apt install -y curl unzip zip
-#     - name: Install SDKMAN!
-#       run: curl -s "https://get.sdkman.io" | bash
-#     - name: Install scala & sbt
-#       run: sdk install scala 2.12.8 && sdk install sbt 1.2.8
-   - name: Build JAR
-     run: ./sbtx assembly
+    # - name: Install prerequisites
+    #   run: sudo apt install -y curl unzip zip
+    # - name: Install SDKMAN!
+    #   run: curl -s "https://get.sdkman.io" | bash
+    # - name: Install scala & sbt
+    #   run: sdk install scala 2.12.8 && sdk install sbt 1.2.8
+    - name: Build JAR
+      run: ./sbtx assembly
