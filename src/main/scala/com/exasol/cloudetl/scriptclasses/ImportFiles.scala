@@ -18,7 +18,6 @@ object ImportFiles extends LazyLogging {
     import org.apache.hadoop.security.UserGroupInformation
     UserGroupInformation.setLoginUser(UserGroupInformation.createRemoteUser("exadefusr"))
     val storageProperties = StorageProperties(iterator.getString(1), metadata)
-    val storageProperties = StorageProperties(iterator.getString(1))
     val fileFormat = storageProperties.getFileFormat()
     val bucket = Bucket(storageProperties)
     val files = groupFiles(iterator, 2)
